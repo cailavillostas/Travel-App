@@ -120,7 +120,7 @@ class TravelHomePage extends StatelessWidget {
   }
 }
 
-// New Page
+
 class Travel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
