@@ -52,7 +52,6 @@ class _DashboardPageState extends State<DashboardPage> {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 16),
-
             Align(
               alignment: Alignment.centerRight,
               child: ElevatedButton.icon(
