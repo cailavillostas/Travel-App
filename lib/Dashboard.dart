@@ -233,6 +233,7 @@ class _AddTripPageState extends State<AddTripPage> {
                     decoration: const InputDecoration(labelText: 'Destination'),
                     validator: (v) => v!.isEmpty ? 'Required' : null,
                   ),
+
                   const SizedBox(height: 12),
                   TextFormField(
                     controller: _startDateController,
