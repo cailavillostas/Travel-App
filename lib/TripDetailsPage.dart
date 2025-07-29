@@ -49,8 +49,11 @@ class _TripDetailsPageState extends State<TripDetailsPage> {
     final activities = trip['activities'] as List;
 
     return Scaffold(
+      backgroundColor: const Color(0xFFE0F7FA), // Light blue background
       appBar: AppBar(
         title: Text(trip['destination']),
+        backgroundColor: Colors.lightBlue.shade400,
+        foregroundColor: Colors.white,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

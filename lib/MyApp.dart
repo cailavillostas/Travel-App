@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
       title: 'Travel Itinerary',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor:  const Color(0xFF6CAEE5), // Sky blue background
+        scaffoldBackgroundColor: Colors.transparent, // Transparent to let container handle color
         primarySwatch: Colors.lightBlue,
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.lightBlue.shade600,
+          backgroundColor: Colors.lightBlue.shade100,
           elevation: 0,
           centerTitle: true,
           titleTextStyle: const TextStyle(
@@ -173,7 +173,8 @@ class _DashboardPageState extends State<DashboardPage> {
         backgroundColor: Colors.lightBlue,
         child: const Icon(Icons.add),
       ),
-      body: Padding(
+      body: Container(
+        color: const Color(0xFF6CAEE5), // Full screen background color
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -184,7 +185,7 @@ class _DashboardPageState extends State<DashboardPage> {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: Colors.lightBlue,
+                color: Colors.white,
               ),
             ),
             const SizedBox(height: 4),
@@ -193,7 +194,7 @@ class _DashboardPageState extends State<DashboardPage> {
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
-                color: Colors.black87,
+                color: Colors.white,
               ),
             ),
             const SizedBox(height: 10),
@@ -203,7 +204,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 itemBuilder: (context, index) {
                   final trip = _trips[index];
                   return Card(
-                    color: const Color(0xFFB3E5FC), // Sky blue card
+                    color: const Color(0xFFB3E5FC), // Lighter card on blue
                     margin: const EdgeInsets.symmetric(vertical: 6),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     child: ListTile(
