@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project/Dashboard.dart';
+import 'package:project/MyApp.dart';
 import 'package:project/WelcomePage.dart';
+import 'AccomplishedTripsPage.dart';
 
 void main() {
   runApp(TravelGuideApp());
